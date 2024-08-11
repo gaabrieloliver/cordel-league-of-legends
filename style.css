@@ -103,3 +103,38 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+@media screen and (max-width: 1024px) {
+
+    /* Ajuste a altura das seções com imagem */
+    section.imagem {
+        background-position: center center;
+        /* Centraliza a imagem */
+        background-size: contain;
+        /* Faz com que a imagem caiba dentro da seção */
+        background-attachment: scroll;
+        /* Permite que a imagem role junto com o conteúdo */
+        padding-top: 20vh;
+        /* Aumenta o padding para maior espaçamento */
+        padding-bottom: 20vh;
+    }
+
+    /* Reduz a fonte para que o texto se ajuste melhor na tela */
+    section {
+        font-size: 4vw;
+        padding-left: 15px;
+        /* Reduz o padding para margens menores */
+        padding-right: 15px;
+    }
+
+    /* Redimensiona o título e espaçamentos no header */
+    header>h1 {
+        font-size: 10vw;
+        /* Aumenta o tamanho da fonte para dispositivos menores */
+        padding-top: 30px;
+    }
+
+    header>p {
+        padding-bottom: 30px;
+    }
+}
